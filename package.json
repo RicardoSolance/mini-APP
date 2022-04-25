@@ -1,0 +1,29 @@
+{
+  "name": "mini-app",
+  "version": "1.0.0",
+  "description": "Simple CRUD project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoSolance/mini-APP.git"
+  },
+  "author": "Ricardo Solance",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RicardoSolance/mini-APP/issues"
+  },
+  "homepage": "https://github.com/RicardoSolance/mini-APP#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.1.0",
+    "mongoose": "^6.3.1",
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
+  }
+}

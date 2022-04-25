@@ -1,0 +1,12 @@
+include ./head.pug
+    include ./header.pug
+    main.main_container
+        div.title
+            h1= `${page}`
+        form.create__form(action=`/product/edit/${page}` method="PUT")
+            input.create__input(name="name",type="text"  value=`${product.name}`)
+            input.create__input(name="price",type="text" value=`${product.price}`)
+            input.create__input(name="description",type="text" value=`${product.description}`)
+            input.create__input(name="image",type="text" value=`${product.image}`)
+            button.create__button(type="submit") Add new product
+    include ./footer.pug
