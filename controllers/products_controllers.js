@@ -29,16 +29,18 @@ const getlanding = async (req, res) => {
 }
 const getProducts = async (req, res) => {
     let name = req.params.name
-    console.log("entra en get Produts");
+    
     try {
         if (name) {
             let title= name
             let data = await Products.findOne({ name: name }, " -_id");
             // res.status(201).json(data);
+            console.log("entra en single Produts");
             res.render("product.pug", {products : data, page: title });
             // console.log(data)
         } else {
-            let title= 'All Products'
+            let title = 'All Products'
+            console.log("entra en All Produts");
             data = await Products.find({});
             res.render("products.pug", { products: data, page: title });
           }
@@ -58,7 +60,7 @@ const goEdit = async (req, res) => {
         res.status(400).json({ error: error });
     }
 }
-const editProduct = async (req, res) => {
+const updateProduct = async (req, res) => {
     console.log("entra en edit");
     try {
       let name = req.query.name
@@ -71,4 +73,4 @@ const editProduct = async (req, res) => {
   };
 
 
-module.exports = {createProduct,goEdit,editProduct,getlanding,getProducts,createOneProduct}
+module.exports = {createProduct,goEdit,updateProduct,getlanding,getProducts,createOneProduct}
