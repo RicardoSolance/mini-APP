@@ -8,7 +8,7 @@ app.use(express.json());//para habilitar la recepcion de datos en un request
 app.set('view engine', 'pug');
 app.use(express.static('public'));
 app.set('views', './views');
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 
 
 

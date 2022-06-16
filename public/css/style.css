@@ -1,12 +1,13 @@
 * {
-    margin: 0px;
+    margin: 0;
+    box-sizing: 0;
     font-family: 'Raleway', sans-serif;
 }
 body{
-    height: auto;
+    /* height: auto; */
 }
 #container_one{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     margin-left: auto;
     margin-right: auto;
