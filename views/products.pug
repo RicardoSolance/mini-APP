@@ -4,11 +4,9 @@ include ./head.pug
         div.title
             h1 PRODUCTS
         each p in products
-            section.product__container
+            div.product__container
                 p.product__title= `${p.name}`
                 img.product__img(src=`${p.image}`)
-                p.product__type  Price:
-                p.products__info= `${p.price} €` 
-                p.product__type  Description:
-                p.products__desc= `${p.description}`
-                a.btn(href=`http://localhost:3000/products/${p.name}`) view more
+                div.products_det 
+                    p.products__info= `${p.price} €` 
+                    a.btn(href=`http://localhost:3000/products/${p.name}`) view more
