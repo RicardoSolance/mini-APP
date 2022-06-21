@@ -35,7 +35,7 @@ const getProducts = async (req, res) => {
             let title= name
             let data = await Products.findOne({ name: name }, " -_id");
             // res.status(201).json(data);
-            console.log("entra en single Produts");
+            // console.log("entra en single Produts");
             res.render("product.pug", {products : data, page: title });
             // console.log(data)
         } else {

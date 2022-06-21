@@ -59,6 +59,22 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+#gsearch{
+    border: 2px solid rgb(230, 230, 230);
+    outline: none;
+    font-size: 22px;
+    height: 60px;
+    
+}
+.menu{
+    width: 98%;
+    height: 60px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+}
 .page{
   position: relative;
   text-align: right;

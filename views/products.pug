@@ -1,8 +1,12 @@
 include ./head.pug
     include ./header.pug
     main.main_container
-        div.title
-            h1 PRODUCTS
+        div.menu 
+            div.title
+                h1 All Products
+            a.btn(href=`http://localhost:3000/products`) Add new Product
+            <input type="search" id="gsearch" name="gsearch" placeholder="Search product">
+            
         each p in products
             div.product__container
                 p.product__title= `${p.name}`
