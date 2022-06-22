@@ -1,11 +1,9 @@
 include ./head.pug
     include ./header.pug
+    include ./menu.pug
     main.main_container
-        
-        div.menu 
-            a.btn(href=`http://localhost:3000/products`) All Products
-            div.title
-                h1 Adiciona un nuevo producto
+        div.title
+            h1 Adiciona un nuevo producto
         form.create__form(action="/products/create" method="POST")
             input.create__input(name="name",type="text" placeholder="Inserta nombre de producto")
             input.create__input(name="price",type="text" placeholder="Precio del Producto")
